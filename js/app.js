@@ -1,6 +1,6 @@
 'use strict'
-var counter ='0'
-var correct='0';
+var counter =parseInt(0)
+var correct=parseInt(0);
 // USER NAME FIRST Q
 let username = prompt('please enter you are student or TA:').toUpperCase();
 switch (username) {
@@ -14,6 +14,11 @@ switch (username) {
     default:
     alert("may you enter other choice ");
         break;
+}
+if (username=='student' || username=='ta')
+{
+    counter++;
+    correct++;
 }
 let name =prompt('What is your name :');
 alert("Welcome  "+ name);
@@ -35,6 +40,15 @@ switch (gender) {
         alert('Your enterd somthing else ');
         break;
 }
+if(gender=='f')
+{
+    correct++;
+    counter++;
+}
+if(gender=='m')
+{
+    counter++;
+}
 // AGR THIRD Q
 let age =prompt('Guess what is may age if I born in 1997 🤔 :');
 switch (age) {
@@ -46,6 +60,7 @@ switch (age) {
         alert('not right I am 23 old');
         break;
 }
+   
 // COLOR FOURTH Q
 let color= prompt('What is my favorite color 💗 :').toLowerCase();
 switch (color) {
@@ -59,6 +74,11 @@ switch (color) {
     default:
         alert('not right my favorite color is pink');
         break;
+}
+if(color=='pink')
+{
+    counter++;
+    correct++;
 }
 // PROGRAMMING FIFTH Q
 let  prog=prompt('Do I like programming:').toLowerCase();
@@ -74,6 +94,15 @@ switch (prog) {
     default:
         alert('may you entered somthing else , any way I like programing');
         break;
+}
+if(prog==='yes')
+{
+    counter++;
+    correct++;
+}
+if(prog==='no')
+{
+    counter++;
 }
  
 // MONEY sixth Q
@@ -93,7 +122,7 @@ let flag =false;
       {
         alert('You are right I have 20 dinar');
         flag=true;
-       
+       correct++;
         break;
       }
       else
@@ -108,7 +137,7 @@ let flag =false;
    
  
   // TAs SEVENTH Q 
-  let best=['Ahlam','Emad','Diala','Mohammad','Saja','Sara','Sondos'];
+  let best=['ahlam','emad','diala','mohammad','saja','sara','sondos'];
   let na='';
   for(let a=0;a<6;a++)
   {
@@ -132,6 +161,7 @@ let flag =false;
       }
       else  {
       alert('You are right the ' + na + '  is TA' );
+      correct++;
       
       }
       
@@ -139,8 +169,8 @@ let flag =false;
   }
 
   // SCORE EIGHTH Q
-//   alert('Your score is ' + couter + '12');
-//   alert('correct out ' + correct);
+  alert('Your score is ' + correct + ' / 12');
+  alert('correct out ' + counter);
 
 if (name != null) 
 {
@@ -159,7 +189,8 @@ if (name != null)
       document.write("<h1> I visited " + country[i]+ "</h1>");
   }
 
-  document.write("<h1> Tha names of TAs </h1>");
+
+  document.write("<h1> The names of TAs </h1>");
  
     
  
