@@ -22,6 +22,9 @@ let city= prompt('Where are you from:');
 let age =prompt('What is your age :');
 let  prog=prompt('Do you like programming:');
 
+alert("Welcome  "+ name);
+
+
 
 if (name != null) 
 {

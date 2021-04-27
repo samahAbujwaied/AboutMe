@@ -3,9 +3,7 @@
     font-family: Comic Sans MS;
     background-color:rgba(255, 99, 71, 0.8);
     width:100%;
-    height:150px;
-    
-    
+    height:150px;  
 }
 
 img{
@@ -19,7 +17,7 @@ img{
     border-radius:50%;
 }
 .sec1 {
-    width:800px;
+    width:1000px;
     padding:20px;
     margin:20px;
     border-radius:40%;
@@ -27,7 +25,7 @@ img{
     text-align: center;
 }
 .sec2 {
-    width:800px;
+    width:1000px;
     padding:20px;
     margin:20px;
     border-radius:40%;
@@ -35,7 +33,7 @@ img{
     text-align: center;
 }
 .sec3 {
-    width:800px;
+    width:1000px;
     padding:20px;
     margin:20px;
     border-radius:40%;
@@ -43,7 +41,7 @@ img{
     text-align: center;
 }
 .sec4 {
-    width:800px;
+    width:1000px;
     padding:20px;
     margin:20px;
     border-radius:40%;
@@ -51,7 +49,7 @@ img{
     text-align: center;
 }
 .sec5 {
-    width:800px;
+    width:1000px;
     padding:20px;
     margin:20px;
     border-radius:40%;
@@ -59,7 +57,7 @@ img{
     text-align: center;
 }
 .sec6 {
-    width:800px;
+    width:1000px;
     padding:20px;
     margin:20px;
     border-radius:40%;
@@ -67,7 +65,7 @@ img{
     text-align: center;
 }
 .sec7 {
-    width:800px;
+    width:1000px;
     padding:20px;
     margin:20px;
     border-radius:40%;
