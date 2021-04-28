@@ -4,60 +4,62 @@ var correct=parseInt(0);
 // USER NAME FIRST Q
 let username = prompt('please enter you are student or TA:').toUpperCase();
 switch (username) {
-    case 'STUDENT':   
-     alert("Welcome  "+ username);
-       break;
+    case 'STUDENT':   {
+      alert("Welcome  "+ username);
+       counter++;
+       correct++;
+       console.log('counter '+ counter+ ' correct  ' + correct);  
+       break;}
     case 'TA':
-           alert("Welcome  "+ username);      
+     {  alert("Welcome  "+ username);  
+       counter++;
+       correct++;
+       console.log('counter '+ counter+ ' correct  ' + correct);     
         break;
-
+          }
     default:
     alert("may you enter other choice ");
+    console.log('counter '+ counter+ ' correct  ' + correct);   
         break;
 }
-if (username=='student' || username=='ta')
-{
-    counter++;
-    correct++;
-}
+
 let name =prompt('What is your name :');
 alert("Welcome  "+ name);
+console.log('counter '+ counter+ ' correct  ' + correct);  
 
 // GENDER SECOUND Q
 let gender =prompt('I AM SAMAH Guess What is my Gender F/M 💁 💁‍♂️ :').toUpperCase();
 switch (gender) {
     case 'F':
         {alert('right I am Girl');
-       
+        counter++;
+        correct++;
+        console.log('counter '+ counter+ ' correct  ' + correct);  
         break;
         }
     case 'M':
         alert('not right I am Girl');
-        
+        counter++;
+        console.log('counter '+ counter+ ' correct  ' + correct);    
         break;
 
     default:
         alert('Your enterd somthing else ');
+        console.log('counter '+ counter+ ' correct  ' + correct);  
         break;
 }
-if(gender=='f')
-{
-    correct++;
-    counter++;
-}
-if(gender=='m')
-{
-    counter++;
-}
+
 // AGR THIRD Q
-let age =prompt('Guess what is may age if I born in 1997 🤔 :');
+let age =prompt('Guess what is my age if I born in 1997 🤔 :');
 switch (age) {
     case '23':
        {alert('right I am 23 old');
-        
+       correct++;
+       console.log('counter '+ counter+ ' correct  ' + correct);  
         break;}
     default:
         alert('not right I am 23 old');
+        console.log('counter '+ counter+ ' correct  ' + correct);  
         break;
 }
    
@@ -67,25 +69,26 @@ switch (color) {
     case 'pink':
         {
         alert('right my favorite color is pink');
-        
+        counter++;
+        correct++;
+        console.log('counter '+ counter+ ' correct  ' + correct);      
         break;
        
         }
     default:
         alert('not right my favorite color is pink');
+        console.log('counter '+ counter+ ' correct  ' + correct);   
         break;
 }
-if(color=='pink')
-{
-    counter++;
-    correct++;
-}
+
 // PROGRAMMING FIFTH Q
 let  prog=prompt('Do I like programming:').toLowerCase();
 switch (prog) {
     case 'yes':
         {alert('right ,yes I do');
-        
+        counter++;
+        correct++;
+        console.log('counter '+ counter+ ' correct  ' + correct);  
         break;}
     case 'no':
         alert('not right , I am like programming');
@@ -94,15 +97,6 @@ switch (prog) {
     default:
         alert('may you entered somthing else , any way I like programing');
         break;
-}
-if(prog==='yes')
-{
-    counter++;
-    correct++;
-}
-if(prog==='no')
-{
-    counter++;
 }
  
 // MONEY sixth Q
@@ -123,6 +117,7 @@ let flag =false;
         alert('You are right I have 20 dinar');
         flag=true;
        correct++;
+       console.log('counter '+ counter+ ' correct  ' + correct);  
         break;
       }
       else
@@ -136,7 +131,7 @@ let flag =false;
   }
    
  
-  // TAs SEVENTH Q 
+// TAs SEVENTH Q 
   let best=['ahlam','emad','diala','mohammad','saja','sara','sondos'];
   let na='';
   for(let a=0;a<6;a++)
@@ -162,13 +157,13 @@ let flag =false;
       else  {
       alert('You are right the ' + na + '  is TA' );
       correct++;
+      counter++;
+      console.log('counter '+ counter+ ' correct  ' + correct);  
       
       }
-      
+   }
 
-  }
-
-  // SCORE EIGHTH Q
+ // SCORE EIGHTH Q
   alert('Your score is ' + correct + ' / 12');
   alert('correct out ' + counter);
 
